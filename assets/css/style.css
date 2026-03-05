@@ -2107,7 +2107,8 @@ ul.social-icon li:hover a {
 }
 .footre-logo p {
     padding-top: 14px;
-    padding-bottom: 30px;
+    padding-bottom: 30px; 
+    /* padding-left: 40px; */
 } 
 .footer-bottom {
     padding-top: 100px;

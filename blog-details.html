@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="assets/css/fontawesome.min.css">
   <!-- style -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- blog api styles -->
+  <link rel="stylesheet" href="assets/css/blog-api.css">
   <!-- responsive -->
   <link rel="stylesheet" href="assets/css/responsive.css">
   <script src="assets/js/jquery-3.7.1.min.js"></script>
@@ -49,47 +51,27 @@
         </a>
         <nav class="navbar">
           <ul class="navbar-links">
-            <li class="navbar-dropdown menu-item-children action">
-              <a href="#">Home<span>new</span></a>
-              <ul class="sub-menu">
-                <li><a href="index.html">home 1</a></li>
-            <li><a href="index-2.html">home 2</a></li>
-            <li><a href="index-3.html">home 3</a></li>
-            <li><a href="index-4.html">home 4<span>new</span></a></li>
-            <li><a href="index-5.html">home 5<span>new</span></a></li>
-            <li><a href="index-6.html">home 6<span>new</span></a></li>
-              </ul>
+            <li class="navbar-dropdown action">
+              <a href="index.html">Home</a>
+              
             </li>
             <li class="navbar-dropdown">
               <a href="about.html">About</a>
             </li> 
-            <li class="navbar-dropdown menu-item-children">
-              <a href="#">Research</a>
-              <ul class="sub-menu">
-                <li><a href="our-project.html">our project</a> </li> 
-                <li><a href="project-details.html">project details</a></li>
-              </ul>
-            </li> 
-            <li class="navbar-dropdown menu-item-children">
-              <a href="#">Page</a>
-              <ul class="sub-menu">
-                <li><a href="services.html">services</a> </li> 
-                <li><a href="services-details.html">services details</a></li>
-                <li><a href="testimonials.html">testimonials</a> </li> 
-                <li><a href="pricing-table.html">pricing table</a></li> 
-                <li><a href="faq.html">faq</a></li>
-              </ul>
-            </li> 
-            <li class="navbar-dropdown menu-item-children">
-              <a href="#">blog</a>
-              <ul class="sub-menu">
-                <li><a href="our-blog.html">our blog</a></li>
-                <li><a href="blog-details.html">blog details</a></li>
-              </ul>
+
+             <li class="navbar-dropdown">
+              <a href="services.html">services</a>
             </li>
+         
+            <li class="navbar-dropdown">
+              <a href="our-blog.html">Blog</a>
+            </li>
+
             <li class="navbar-dropdown">
               <a href="contact.html">contact</a>
-            </li>
+            </li> 
+            
+          
           </ul>
         </nav>
         <div class="header-menu-right">
@@ -104,7 +86,7 @@
                   <path id="Path_216" data-name="Path 216"
                     d="M30.441,28.789l-6.276-6.276a1,1,0,1,0-1.414,1.414L29.027,30.2a1,1,0,1,0,1.414-1.414Z"
                     transform="translate(-2.31 -2.547)" fill-rule="evenodd" />
-                </svg>
+              </svg>
               </i>
             </a>
           </div> 
@@ -119,41 +101,19 @@
         </a>
       </div>
       <ul>
-        <li class="menu-item-has-children">
-          <a href="javascript:void(0)">Home</a>
-          <ul class="sub-menu">
-            <li><a href="index.html">home 1</a></li>
-                <li><a href="index-2.html">home 2</a></li>
-                <li><a href="index-3.html">home 3</a></li>
-          </ul>
+        <li>
+          <a href="index.html">Home</a>
         </li>
         <li>
-          <a href="#">about</a>
+          <a href="about.html">about</a>
         </li>
-        <li class="menu-item-has-children">
-              <a href="javascript:void(0)">Research</a>
-              <ul class="sub-menu">
-                <li><a href="our-project.html">our project</a> </li> 
-                <li><a href="project-details.html">project details</a></li>
-              </ul>
-            </li>
-            <li class="menu-item-has-children">
-              <a href="javascript:void(0)">Page</a>
-              <ul class="sub-menu">
-                <li><a href="services.html">services</a> </li> 
-                <li><a href="services-details.html">services details</a></li>
-                <li><a href="testimonials.html">testimonials</a> </li> 
-                <li><a href="pricing-table.html">pricing table</a></li> 
-                <li><a href="faq.html">faq</a></li>
-              </ul>
-            </li>
-        <li class="menu-item-has-children">
-          <a href="javascript:void(0)">blog</a>
-          <ul class="sub-menu">
-            <li><a href="our-blog.html">our blog</a></li>
-            <li><a href="blog-details.html">blog details</a></li>
-          </ul>
+         <li>
+          <a href="services.html">services</a>
         </li>
+        <li>
+              <a href="our-blog.html">Blog</a>
+            </li>
+
         <li>
           <a href="contact.html">Contact</a>
         </li>
@@ -161,24 +121,27 @@
       <a href="JavaScript:void(0)" id="res-cross"></a>
     </div>
   </header>
-  <section class="banner" style="background-image:url(assets/img/bannr-bg-img.png)">
+  <!-- <section class="banner" style="background-image:url(assets/img/bannr-bg-img.png)">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6">
           <div class="title-area-data">
-            <h2>Blog Details</h2>
+            <h2 id="banner-title">Blog Post</h2>
             <img src="assets/img/shap-three-1.png" alt="banner-shap" class="banner-shap">
           </div>
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
               <a href="index.html"> Home </a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">Blog Details</li>
+            <li class="breadcrumb-item">
+              <a href="our-blog.html"> Blog </a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page" id="breadcrumb-post">Blog Post</li>
           </ol>
         </div>
         <div class="col-lg-6">
           <div class="banner-img">
-            <img src="assets/img/bannr-img.png" alt="img">
+            <img id="banner-cover" src="assets/img/bannr-img.png" alt="blog cover">
             <ul class="shaps">
               <li><img src="assets/img/shaps-1.png" alt="img"></li>
               <li><img src="assets/img/bannr-shap.png" alt="img"></li>
@@ -190,31 +153,34 @@
         </div>
       </div>
     </div>
-  </section>
-  <section class="gap blog-details-page">
+  </section> -->
+  <!-- <section class="gap blog-details-page">
     <div class="container">
       <div class="row">
         <div class="col-lg-8">
           <div class="blog-one-style hover-img">
             <figure>
-              <img src="assets/img/blog-details-1.jpg" alt="img">
+              <img id="post-cover-image" src="assets/img/blog-details-1.jpg" alt="img">
             </figure> 
-            <div class="admin">
+            <div id="post-author-info" class="admin">
               <a href="#"><i>
                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M8.43724 7.49957C8.43724 8.0171 8.01722 8.43713 7.4997 8.43713C6.98218 8.43713 6.56216 8.0171 6.56216 7.49957C6.56216 6.98205 6.98218 6.56202 7.4997 6.56202C8.01722 6.56202 8.43724 6.98205 8.43724 7.49957ZM10.6248 6.56202C10.1073 6.56202 9.68729 6.98205 9.68729 7.49957C9.68729 8.0171 10.1073 8.43713 10.6248 8.43713C11.1423 8.43713 11.5624 8.0171 11.5624 7.49957C11.5624 6.98205 11.1423 6.56202 10.6248 6.56202ZM4.37457 6.56202C3.85705 6.56202 3.43704 6.98205 3.43704 7.49957C3.43704 8.0171 3.85705 8.43713 4.37457 8.43713C4.89209 8.43713 5.31211 8.0171 5.31211 7.49957C5.31211 6.98205 4.89209 6.56202 4.37457 6.56202ZM15 7.71209V11.8748C15 13.598 13.5981 15 11.8749 15H8.1766C3.8008 15 0.293159 12.0048 0.0181476 8.03335C-0.132483 5.86073 0.660048 3.73436 2.19261 2.1999C3.72517 0.665438 5.85151 -0.129607 8.02222 0.0172758C11.9349 0.282916 15 3.66248 15 7.71209ZM13.75 7.71209C13.75 4.31752 11.1973 1.48548 7.93784 1.26422C7.79471 1.25422 7.65158 1.24985 7.50907 1.24985C5.84901 1.24985 4.25332 1.90488 3.07702 3.08307C1.79947 4.3619 1.13882 6.13512 1.26507 7.9471C1.49821 11.3098 4.4052 13.7506 8.17723 13.7506H11.8755C12.9093 13.7506 13.7506 12.9093 13.7506 11.8754V7.71271L13.75 7.71209Z" fill="#646464"/>
                 </svg>
                 </i>By Admin</a>
             </div>
-            <div class="comment">
+            <div id="post-view-count" class="comment">
               <a href="#"><i><svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.5 7.5C6.2252 7.5 6.93411 7.28007 7.53709 6.86801C8.14007 6.45596 8.61004 5.87029 8.88756 5.18507C9.16508 4.49984 9.23769 3.74584 9.09621 3.01841C8.95473 2.29099 8.60552 1.6228 8.09273 1.09835C7.57993 0.573905 6.9266 0.216752 6.21533 0.0720569C5.50407 -0.0726377 4.76682 0.00162483 4.09683 0.285454C3.42683 0.569282 2.85418 1.04993 2.45128 1.66661C2.04838 2.2833 1.83333 3.00832 1.83333 3.75C1.8343 4.74426 2.22092 5.69751 2.90835 6.40056C3.59577 7.1036 4.52784 7.49901 5.5 7.5ZM5.5 1.25C5.98347 1.25 6.45607 1.39662 6.85806 1.67133C7.26005 1.94603 7.57336 2.33648 7.75837 2.79329C7.94339 3.25011 7.9918 3.75278 7.89748 4.23773C7.80316 4.72268 7.57035 5.16814 7.22848 5.51777C6.88662 5.8674 6.45106 6.1055 5.97689 6.20197C5.50271 6.29843 5.01122 6.24892 4.56455 6.0597C4.11789 5.87048 3.73612 5.55005 3.46752 5.13893C3.19892 4.72781 3.05556 4.24446 3.05556 3.75C3.05556 3.08696 3.31309 2.45108 3.77152 1.98224C4.22994 1.51339 4.85169 1.25 5.5 1.25Z" fill="#646464"/>
                 <path d="M5.5 8.75C4.04181 8.75165 2.6438 9.34482 1.6127 10.3993C0.5816 11.4539 0.00161752 12.8837 0 14.375C0 14.5408 0.0643847 14.6997 0.17899 14.8169C0.293596 14.9342 0.449034 15 0.611111 15C0.773188 15 0.928626 14.9342 1.04323 14.8169C1.15784 14.6997 1.22222 14.5408 1.22222 14.375C1.22222 13.2147 1.67292 12.1019 2.47515 11.2814C3.27739 10.4609 4.36546 10 5.5 10C6.63454 10 7.72261 10.4609 8.52485 11.2814C9.32708 12.1019 9.77778 13.2147 9.77778 14.375C9.77778 14.5408 9.84216 14.6997 9.95677 14.8169C10.0714 14.9342 10.2268 15 10.3889 15C10.551 15 10.7064 14.9342 10.821 14.8169C10.9356 14.6997 11 14.5408 11 14.375C10.9984 12.8837 10.4184 11.4539 9.3873 10.3993C8.3562 9.34482 6.95819 8.75165 5.5 8.75Z" fill="#646464"/>
                 </svg>
                 </i>02 Comment</a>
             </div>
-            <h2>In-Depth Health Insights</h2>
-            <p>we believe that informed patients make healthier choices. Our In-Depth Health Insights section is designed to provide you with comprehensive, evidence-based information on a wide range of health topics, empowering you to take control of your well-being. What You’ll Find Detailed Articles on Medical Conditions Gain a deeper understanding of various health conditions, including their causes, symptoms, diagnosis, and treatment options.<br><br> Our expert-written articles break down complex medical information into easy-to-understand language. Preventive Healthcare Strategies Learn how to reduce your risk of developing chronic diseases through lifestyle changes, early detection, and regular screenings. Latest Research and Innovations Stay updated with the latest advancements in medical technology, treatments, and procedures that can enhance your quality of life.</p> 
+            <h2 id="post-main-title">In-Depth Health Insights</h2>
+            <div id="post-categories" class="mb-3"></div>
+            <div id="post-full-content">
+              <p>we believe that informed patients make healthier choices. Our In-Depth Health Insights section is designed to provide you with comprehensive, evidence-based information on a wide range of health topics, empowering you to take control of your well-being. What You'll Find Detailed Articles on Medical Conditions Gain a deeper understanding of various health conditions, including their causes, symptoms, diagnosis, and treatment options.<br><br> Our expert-written articles break down complex medical information into easy-to-understand language. Preventive Healthcare Strategies Learn how to reduce your risk of developing chronic diseases through lifestyle changes, early detection, and regular screenings. Latest Research and Innovations Stay updated with the latest advancements in medical technology, treatments, and procedures that can enhance your quality of life.</p> 
+            </div>
           </div>
           <div class="quotes">
             <div>
@@ -248,12 +214,8 @@
             <p>Health education empowers everyone. Share your insights, experiences, and tips to help others make informed health decisions. Supporting One Another A strong community is built on empathy and support. Encourage and uplift others as they navigate their health journeys. Participating in Wellness Events Join us for health workshops, screenings, and community outreach programs designed to promote wellness and preventive care. </p>
           </div>
           <div class="tags-hare">
-            <h4>Tags Hare :</h4>
-            <ul class="tags-list">
-              <li><a href="#">Wellness</a></li>
-              <li><a href="#">Mental</a></li>
-              <li><a href="#">Exercise</a></li>
-            </ul>
+            <h4>Tags :</h4>
+            <ul class="tags-list" id="post-tags-list">
             <ul class="social-icon">
                 <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
@@ -350,13 +312,13 @@
               </form>
             </div>
             <div class="sidebar">
-              <h3>Services List</h3>
-              <ul class="services-list">
-                <li><a href="#">Preventive Care<i class="fa-solid fa-arrow-right"></i></a></li>
-                <li><a href="#">Restorative Dentistry<i class="fa-solid fa-arrow-right"></i></a></li>
-                <li><a href="#">Cosmetic Dentistry<i class="fa-solid fa-arrow-right"></i></a></li>
-                <li><a href="#">Orthodontic Treatments<i class="fa-solid fa-arrow-right"></i></a></li>
-                <li><a href="#">Emergency Dental Care<i class="fa-solid fa-arrow-right"></i></a></li>
+              <h3>Categories</h3>
+              <ul class="services-list" id="sidebar-categories">
+              </ul>
+            </div>
+            <div class="sidebar">
+              <h3>Recent Posts</h3>
+              <ul class="services-list" id="sidebar-recent-posts">
               </ul>
             </div>
             <div class="sidebar">
@@ -405,37 +367,61 @@
                <a href="#" class="btn"><span><i class="fa-brands fa-instagram"></i>Follow Us Instagram</span></a>
             </div>
             <div class="sidebar">
-              <h3>Social Icon</h3>
-              <ul class="tags-list">
-                <li><a href="#">Wellness</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Volunteer</a></li>
-                <li><a href="#">Whitening</a></li>
-                <li><a href="#">Dentalium</a></li>
-                <li><a href="#">Summer</a></li>
+              <h3>All Tags</h3>
+              <ul class="tags-list" id="sidebar-all-tags">
               </ul>
             </div>
           </div>
         </div> 
       </div>
     </div>
-  </section>
-  <footer class="gap no-bottom">
+  </section> -->
+  <section class="banner" style="background-image:url(assets/img/bannr-bg-img.png)">
     <div class="container">
-      <div class="subscribe">
-        <h2>Subscribe To Regular Newsletters.</h2>
-        <form>
-          <input type="email" name="email" placeholder="Enter Your Email">
-          <button class="btn"><span>Subscribe</span></button>
-        </form>
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="title-area-data">
+            <h2 id="banner-title">Blog Post</h2>
+            <img src="assets/img/shap-three-1.png" alt="banner-shap" class="banner-shap">
+          </div>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="our-blog.html">Blog</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page" id="breadcrumb-post">Blog Post</li>
+          </ol>
+        </div>
+        <div class="col-lg-6">
+          <div class="banner-img">
+          </div>
+        </div>
       </div>
-      <div class="footer-bottom">
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="footre-logo">
-              <a href="#"><img src="assets/img/logo.png" alt="img"></a>
-              <p>we are committed to delivering exceptional healthcare with compassion, expertise, and innovation. Our
-                dedicated.</p>
+    </div>
+  </section>
+
+  <section class="gap blog-details-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <article class="blog-one-style hover-img e1-post-detail">
+            <figure id="post-cover-wrap">
+              <img id="post-cover-image" src="assets/img/blog-details-1.jpg" alt="blog post">
+            </figure>
+            <div class="post-meta-row">
+              <div id="post-author-info" class="admin"></div>
+              <div id="post-view-count" class="comment"></div>
+            </div>
+            <div id="post-categories" class="blog-categories mb-3"></div>
+            <h2 id="post-main-title">Loading post...</h2>
+            <div id="post-full-content" class="post-full-content">
+              <p>Loading post...</p>
+            </div>
+            <div class="tags-hare" id="post-tags-wrap" hidden>
+              <h4>Tags :</h4>
+              <ul class="tags-list" id="post-tags-list"></ul>
               <ul class="social-icon">
                 <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
@@ -443,87 +429,113 @@
                 <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
               </ul>
             </div>
-          </div>
-          <div class="col-lg-3 col-6">
-            <div class="footer-link">
-              <h5>Link</h5>
-              <ul class="footer-link-list">
-                <li><a href="#"> About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">services</a></li>
-                <li><a href="#">Doctors</a></li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
+          </article>
+
+          <div class="blog-admin" id="post-author-card" hidden>
+            <img id="post-author-avatar" src="assets/img/Johari-lslam.jpg" alt="author">
+            <div>
+              <h5 id="post-author-name"></h5>
+              <p id="post-author-bio"></p>
             </div>
           </div>
-          <div class="col-lg-3 col-6">
-            <div class="footer-link">
-              <h5>services</h5>
-              <ul class="footer-link-list">
-                <li><a href="#"> Patient Resources</a></li>
-                <li><a href="#">Payment Options</a></li>
-                <li><a href="#">Telemedicine Portal</a></li>
-                <li><a href="#">Insurance Information</a></li>
-                <li><a href="#">Appointment Booking</a></li>
-              </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="services-details-sidebar">
+            <div class="sidebar">
+              <h3>Search Here</h3>
+              <form class="search-hare" id="blog-search-form" action="our-blog.html" method="get">
+                <input type="search" name="search" placeholder="Search blog">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </form>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-link contact-footer">
-              <h5>contact uS</h5>
-              <ul class="footer-link-list">
-                <li>
-                  <h6>
-                    <i>
-                      <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M5 3.00075C4.6066 3.00075 4.22204 3.11804 3.89494 3.33778C3.56784 3.55752 3.3129 3.86985 3.16235 4.23527C3.0118 4.6007 2.97241 5.00279 3.04916 5.39072C3.12591 5.77865 3.31535 6.13499 3.59352 6.41467C3.8717 6.69435 4.22611 6.88481 4.61195 6.96198C4.99779 7.03914 5.39773 6.99954 5.76118 6.84818C6.12463 6.69681 6.43528 6.44049 6.65384 6.11162C6.87241 5.78275 6.98906 5.3961 6.98906 5.00058C6.98906 4.47019 6.7795 3.96152 6.40648 3.58648C6.03346 3.21144 5.52753 3.00075 5 3.00075ZM5 6.00049C4.8033 6.00049 4.61102 5.94185 4.44747 5.83197C4.28392 5.7221 4.15645 5.56594 4.08117 5.38323C4.0059 5.20052 3.98621 4.99947 4.02458 4.8055C4.06295 4.61154 4.15767 4.43337 4.29676 4.29353C4.43585 4.15369 4.61306 4.05846 4.80598 4.01988C4.9989 3.98129 5.19886 4.00109 5.38059 4.07678C5.56232 4.15246 5.71764 4.28062 5.82692 4.44505C5.9362 4.60949 5.99453 4.80281 5.99453 5.00058C5.99453 5.26577 5.88975 5.5201 5.70324 5.70762C5.51673 5.89514 5.26377 6.00049 5 6.00049Z"
-                          fill="#021935" />
-                        <path
-                          d="M5 12C4.58128 12.0021 4.16813 11.9034 3.79516 11.712C3.42219 11.5206 3.10025 11.2422 2.85629 10.9001C0.961213 8.27179 0 6.29596 0 5.02707C0 3.69381 0.526784 2.41515 1.46447 1.47239C2.40215 0.529636 3.67392 0 5 0C6.32608 0 7.59785 0.529636 8.53553 1.47239C9.47322 2.41515 10 3.69381 10 5.02707C10 6.29596 9.03879 8.27179 7.14371 10.9001C6.89975 11.2422 6.57781 11.5206 6.20484 11.712C5.83187 11.9034 5.41873 12.0021 5 12ZM5 1.09141C3.96192 1.0926 2.96669 1.50773 2.23266 2.24574C1.49862 2.98375 1.08572 3.98436 1.08453 5.02807C1.08453 6.03298 2.02586 7.89132 3.73446 10.2606C3.87951 10.4615 4.0698 10.625 4.28976 10.7377C4.50973 10.8504 4.75311 10.9092 5 10.9092C5.24689 10.9092 5.49027 10.8504 5.71024 10.7377C5.9302 10.625 6.12049 10.4615 6.26554 10.2606C7.97414 7.89132 8.91547 6.03298 8.91547 5.02807C8.91428 3.98436 8.50138 2.98375 7.76734 2.24574C7.03331 1.50773 6.03808 1.0926 5 1.09141Z"
-                          fill="#021935" />
-                      </svg>
-                    </i>
-                    Address
-                  </h6>
-                  <span>1901 Thornridge Cir. Shiloh</span>
-                </li>
-                <li>
-                  <h6>
-                    <i>
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M6.49103 0.501622C6.49103 0.368796 6.5438 0.24141 6.63772 0.147487C6.73164 0.0535649 6.85902 0.000799798 6.99185 0.000799798C8.31964 0.00225799 9.59264 0.530377 10.5315 1.46929C11.4704 2.40819 11.9985 3.68121 12 5.00903C12 5.14185 11.9472 5.26924 11.8533 5.36316C11.7594 5.45708 11.632 5.50985 11.4992 5.50985C11.3664 5.50985 11.239 5.45708 11.1451 5.36316C11.0511 5.26924 10.9984 5.14185 10.9984 5.00903C10.9972 3.94678 10.5747 2.92838 9.82357 2.17726C9.07246 1.42614 8.05408 1.00364 6.99185 1.00245C6.85902 1.00245 6.73164 0.94968 6.63772 0.855758C6.5438 0.761835 6.49103 0.634449 6.49103 0.501622ZM6.99185 3.00574C7.52314 3.00574 8.03268 3.2168 8.40837 3.59249C8.78405 3.96818 8.99511 4.47772 8.99511 5.00903C8.99511 5.14185 9.04787 5.26924 9.14179 5.36316C9.23571 5.45708 9.3631 5.50985 9.49592 5.50985C9.62875 5.50985 9.75613 5.45708 9.85005 5.36316C9.94397 5.26924 9.99674 5.14185 9.99674 5.00903C9.99594 4.21231 9.6791 3.44846 9.11575 2.88509C8.55239 2.32173 7.78855 2.00489 6.99185 2.00409C6.85902 2.00409 6.73164 2.05686 6.63772 2.15078C6.5438 2.2447 6.49103 2.37209 6.49103 2.50491C6.49103 2.63774 6.5438 2.76513 6.63772 2.85905C6.73164 2.95297 6.85902 3.00574 6.99185 3.00574ZM11.5458 8.38407C11.836 8.67511 11.999 9.06935 11.999 9.48037C11.999 9.89139 11.836 10.2856 11.5458 10.5767L11.09 11.102C6.98834 15.029 -2.99291 5.05009 0.873384 0.935335L1.44932 0.434512C1.74068 0.152387 2.1314 -0.00368303 2.53694 6.60132e-05C2.94249 0.00381505 3.33026 0.167082 3.61635 0.454545C3.63188 0.470071 4.55989 1.67555 4.55989 1.67555C4.83525 1.96484 4.98854 2.34912 4.98788 2.74851C4.98723 3.14791 4.83269 3.53169 4.55638 3.82007L3.97644 4.54927C4.29738 5.32911 4.76926 6.03784 5.36495 6.63474C5.96064 7.23165 6.66841 7.70496 7.44759 8.02748L8.18128 7.44403C8.4697 7.16793 8.85341 7.01357 9.25268 7.01301C9.65194 7.01245 10.0361 7.16573 10.3253 7.44102C10.3253 7.44102 11.5302 8.36854 11.5458 8.38407ZM10.8566 9.11227C10.8566 9.11227 9.65819 8.19025 9.64266 8.17473C9.53949 8.07242 9.40007 8.01502 9.25478 8.01502C9.10949 8.01502 8.97007 8.07242 8.8669 8.17473C8.85338 8.18875 7.84323 8.99357 7.84323 8.99357C7.77516 9.04776 7.69415 9.08327 7.60817 9.09662C7.5222 9.10997 7.43423 9.10069 7.35293 9.0697C6.34352 8.69386 5.42667 8.10548 4.66447 7.3444C3.90228 6.58332 3.31256 5.66732 2.93524 4.65845C2.90179 4.57604 2.89088 4.48621 2.90364 4.39819C2.9164 4.31017 2.95238 4.22714 3.00786 4.15763C3.00786 4.15763 3.81267 3.14697 3.82619 3.13395C3.92849 3.03077 3.98589 2.89136 3.98589 2.74606C3.98589 2.60076 3.92849 2.46135 3.82619 2.35817C3.81067 2.34315 2.88867 1.14368 2.88867 1.14368C2.78394 1.04978 2.64727 0.999488 2.50667 1.00312C2.36606 1.00675 2.23217 1.06403 2.13243 1.16321L1.5565 1.66403C-1.2691 5.06161 7.38048 13.2315 10.3578 10.4179L10.8141 9.89205C10.921 9.79301 10.9852 9.65629 10.9931 9.51077C11.0011 9.36525 10.9521 9.22235 10.8566 9.11227Z"
-                          fill="#021935" />
-                      </svg>
-                    </i>Phone Number
-                  </h6>
-                  <a href="callto:013221392132">013 354 213 - 92132</a>
-                </li>
-                <li>
-                  <h6>
-                    <i>
-                      <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M11.0833 0H2.91667C2.1434 0.000866104 1.40208 0.288481 0.855295 0.799756C0.308514 1.31103 0.00092625 2.00422 0 2.72727L0 9.27273C0.00092625 9.99578 0.308514 10.689 0.855295 11.2002C1.40208 11.7115 2.1434 11.9991 2.91667 12H11.0833C11.8566 11.9991 12.5979 11.7115 13.1447 11.2002C13.6915 10.689 13.9991 9.99578 14 9.27273V2.72727C13.9991 2.00422 13.6915 1.31103 13.1447 0.799756C12.5979 0.288481 11.8566 0.000866104 11.0833 0ZM2.91667 1.09091H11.0833C11.4326 1.09155 11.7737 1.18992 12.0627 1.37335C12.3517 1.55678 12.5754 1.81688 12.705 2.12018L8.23783 6.29782C7.90908 6.60399 7.46399 6.77589 7 6.77589C6.53601 6.77589 6.09092 6.60399 5.76217 6.29782L1.295 2.12018C1.42459 1.81688 1.64827 1.55678 1.93728 1.37335C2.22628 1.18992 2.56738 1.09155 2.91667 1.09091ZM11.0833 10.9091H2.91667C2.45254 10.9091 2.00742 10.7367 1.67923 10.4298C1.35104 10.1229 1.16667 9.70672 1.16667 9.27273V3.54545L4.93733 7.06909C5.48487 7.57978 6.22665 7.86657 7 7.86657C7.77335 7.86657 8.51513 7.57978 9.06267 7.06909L12.8333 3.54545V9.27273C12.8333 9.70672 12.649 10.1229 12.3208 10.4298C11.9926 10.7367 11.5475 10.9091 11.0833 10.9091Z"
-                          fill="#021935" />
-                      </svg>
-                    </i>
-                    email Address
-                  </h6>
-                  <a href="mailto:info123@gmail.com">info123@gmail.com</a>
-                </li>
-              </ul>
+            <div class="sidebar">
+              <h3>Categories</h3>
+              <ul class="services-list" id="sidebar-categories"></ul>
+            </div>
+            <div class="sidebar">
+              <h3>Recent Posts</h3>
+              <ul class="services-list" id="sidebar-recent-posts"></ul>
+            </div>
+            <div class="sidebar">
+              <h3>All Tags</h3>
+              <ul class="tags-list" id="sidebar-all-tags"></ul>
             </div>
           </div>
         </div>
       </div>
-      <div class="copyright">
-        <p>Copyright © 2024 <span>Maula.</span> All Rights Reserved.</p>
-        <ul>
-          <li><a href="#">Terms & Conditions</a></li>
-          <li><a href="#">Privacy policy</a></li>
+    </div>
+  </section>
+
+    <footer class="gap no-bottom">
+    
+      <div class="footer-bottom container">
+  <div class="row">
+    <div class="col-lg-3 col-md-6">
+      <div class="footre-logo">
+        <a href="#"><img src="assets/img/logo.png" alt="img"></a>
+        <p>We are committed to delivering exceptional mental healthcare with compassion, expertise, and innovation.</p>
+        <ul class="social-icon">
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
         </ul>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-6">
+      <div class="footer-link">
+        <h5>Links</h5>
+        <ul class="footer-link-list">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="our-blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-6">
+      <div class="footer-link">
+        <h5>Our Services</h5>
+        <ul class="footer-link-list">
+          <li><a href="#">Comprehensive Psychiatric Evaluations</a></li>
+          <li><a href="#">Medication Management</a></li>
+          <li><a href="#">Psychotherapy (CBT, DBT, Family & Group)</a></li>
+          <li><a href="#">Crisis Intervention</a></li>
+          <li><a href="#">Psychoeducation</a></li>
+          <li><a href="#">Collaborative Care</a></li>
+          <li><a href="#">Holistic Wellness Support</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-6">
+      <div class="footer-link contact-footer">
+        <h5>Contact Us</h5>
+        <ul class="footer-link-list">
+          <li>
+            <h6><i class="fa-solid fa-location-dot"></i> Address</h6>
+            <span>1400 Mercantile Lane,  Ste. 204 Largo MD 20774</span>
+          </li>
+          <li>
+            <h6><i class="fa-solid fa-phone"></i> Phone Number</h6>
+            <a href="tel:(240)4596084">(240) 459-6084</a>
+          </li>
+          <li>
+            <h6><i class="fa-solid fa-envelope"></i> Email Address</h6>
+            <a href="mailto:info123@gmail.com">info@libentia.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="copyright container">
+        <p>Copyright © 2025 <a href="https://edoubleone.com"> Edoublone Inc.</a> All Rights Reserved.</p>
+        
       </div>
     </div>
   </footer>
@@ -548,5 +560,191 @@
   <script src="assets/js/jquery.countdown.min.js"></script>
   <script src="assets/js/circle-progres.js"></script>
   <script src="assets/js/custom.js"></script>
+  <!-- Blog API Integration -->
+  <script src="assets/js/blog-api.js"></script>
+  
+  <!-- Blog Post Detail Handler -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const postSlug = urlParams.get('slug');
+
+      if (!postSlug || !window.blogAPI) {
+        document.getElementById('post-full-content').innerHTML = '<p class="alert alert-danger">Post not found.</p>';
+        return;
+      }
+
+      // Wait for API to initialize, then fetch post
+      const checkApi = setInterval(function() {
+        if (window.blogAPI && window.blogAPI.baseURL) {
+          clearInterval(checkApi);
+          loadBlogPost(postSlug);
+        }
+      }, 100);
+
+      async function loadBlogPost(slug) {
+        try {
+          const post = await window.blogAPI.fetchPost(slug);
+          
+          if (!post) {
+            document.getElementById('post-full-content').innerHTML = '<p class="alert alert-danger">Post not found.</p>';
+            return;
+          }
+
+          // Update page title and meta
+          document.title = (post.seo?.meta_title || post.title) + ' | Libentia Mental Health';
+          let metaDesc = document.querySelector('meta[name="description"]');
+          if (!metaDesc) {
+            metaDesc = document.createElement('meta');
+            metaDesc.setAttribute('name', 'description');
+            document.head.appendChild(metaDesc);
+          }
+          metaDesc.content = post.seo?.meta_description || post.excerpt || '';
+
+          if (post.seo?.canonical_url) {
+            let canonical = document.querySelector('link[rel="canonical"]');
+            if (!canonical) {
+              canonical = document.createElement('link');
+              canonical.setAttribute('rel', 'canonical');
+              document.head.appendChild(canonical);
+            }
+            canonical.href = post.seo.canonical_url;
+          }
+
+          if (post.seo?.robots) {
+            let robots = document.querySelector('meta[name="robots"]');
+            if (!robots) {
+              robots = document.createElement('meta');
+              robots.setAttribute('name', 'robots');
+              document.head.appendChild(robots);
+            }
+            robots.content = post.seo.robots;
+          }
+
+          if (post.json_ld) {
+            let jsonLd = document.getElementById('post-json-ld');
+            if (!jsonLd) {
+              jsonLd = document.createElement('script');
+              jsonLd.type = 'application/ld+json';
+              jsonLd.id = 'post-json-ld';
+              document.head.appendChild(jsonLd);
+            }
+            jsonLd.textContent = JSON.stringify(post.json_ld);
+          }
+
+          // Update banner
+          document.getElementById('banner-title').textContent = post.title;
+          document.getElementById('breadcrumb-post').textContent = post.title;
+          if (post.cover_image) {
+            document.getElementById('banner-cover').src = post.cover_image;
+          }
+
+          // Update post content
+          document.getElementById('post-cover-image').src = post.cover_image || 'assets/img/blog-details-1.jpg';
+          document.getElementById('post-main-title').textContent = post.title;
+          document.getElementById('post-full-content').innerHTML = post.content || post.excerpt;
+
+          // Update author info
+          if (post.author) {
+            document.getElementById('post-author-info').innerHTML = `
+              <a href="#"><i>
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.43724 7.49957C8.43724 8.0171 8.01722 8.43713 7.4997 8.43713C6.98218 8.43713 6.56216 8.0171 6.56216 7.49957C6.56216 6.98205 6.98218 6.56202 7.4997 6.56202C8.01722 6.56202 8.43724 6.98205 8.43724 7.49957ZM10.6248 6.56202C10.1073 6.56202 9.68729 6.98205 9.68729 7.49957C9.68729 8.0171 10.1073 8.43713 10.6248 8.43713C11.1423 8.43713 11.5624 8.0171 11.5624 7.49957C11.5624 6.98205 11.1423 6.56202 10.6248 6.56202ZM4.37457 6.56202C3.85705 6.56202 3.43704 6.98205 3.43704 7.49957C3.43704 8.0171 3.85705 8.43713 4.37457 8.43713C4.89209 8.43713 5.31211 8.0171 5.31211 7.49957C5.31211 6.98205 4.89209 6.56202 4.37457 6.56202ZM15 7.71209V11.8748C15 13.598 13.5981 15 11.8749 15H8.1766C3.8008 15 0.293159 12.0048 0.0181476 8.03335C-0.132483 5.86073 0.660048 3.73436 2.19261 2.1999C3.72517 0.665438 5.85151 -0.129607 8.02222 0.0172758C11.9349 0.282916 15 3.66248 15 7.71209ZM13.75 7.71209C13.75 4.31752 11.1973 1.48548 7.93784 1.26422C7.79471 1.25422 7.65158 1.24985 7.50907 1.24985C5.84901 1.24985 4.25332 1.90488 3.07702 3.08307C1.79947 4.3619 1.13882 6.13512 1.26507 7.9471C1.49821 11.3098 4.4052 13.7506 8.17723 13.7506H11.8755C12.9093 13.7506 13.7506 12.9093 13.7506 11.8754V7.71271L13.75 7.71209Z" fill="#646464"/>
+                </svg>
+              </i>By ${window.escapeHtml(post.author.name)}</a>
+            `;
+
+            const authorCard = document.getElementById('post-author-card');
+            document.getElementById('post-author-name').textContent = post.author.name;
+            document.getElementById('post-author-bio').textContent = post.author.bio || '';
+            if (post.author.avatar) {
+              document.getElementById('post-author-avatar').src = post.author.avatar;
+            }
+            authorCard.hidden = false;
+          }
+
+          // Update view count
+          if (post.view_count) {
+            document.getElementById('post-view-count').innerHTML = `
+              <a href="#"><i>
+                <svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 7.5C6.2252 7.5 6.93411 7.28007 7.53709 6.86801C8.14007 6.45596 8.61004 5.87029 8.88756 5.18507C9.16508 4.49984 9.23769 3.74584 9.09621 3.01841C8.95473 2.29099 8.60552 1.6228 8.09273 1.09835C7.57993 0.573905 6.9266 0.216752 6.21533 0.0720569C5.50407 -0.0726377 4.76682 0.00162483 4.09683 0.285454C3.42683 0.569282 2.85418 1.04993 2.45128 1.66661C2.04838 2.2833 1.83333 3.00832 1.83333 3.75C1.8343 4.74426 2.22092 5.69751 2.90835 6.40056C3.59577 7.1036 4.52784 7.49901 5.5 7.5ZM5.5 1.25C5.98347 1.25 6.45607 1.39662 6.85806 1.67133C7.26005 1.94603 7.57336 2.33648 7.75837 2.79329C7.94339 3.25011 7.9918 3.75278 7.89748 4.23773C7.80316 4.72268 7.57035 5.16814 7.22848 5.51777C6.88662 5.8674 6.45106 6.1055 5.97689 6.20197C5.50271 6.29843 5.01122 6.24892 4.56455 6.0597C4.11789 5.87048 3.73612 5.55005 3.46752 5.13893C3.19892 4.72781 3.05556 4.24446 3.05556 3.75C3.05556 3.08696 3.31309 2.45108 3.77152 1.98224C4.22994 1.51339 4.85169 1.25 5.5 1.25Z" fill="#646464"/>
+                  <path d="M5.5 8.75C4.04181 8.75165 2.6438 9.34482 1.6127 10.3993C0.5816 11.4539 0.00161752 12.8837 0 14.375C0 14.5408 0.0643847 14.6997 0.17899 14.8169C0.293596 14.9342 0.449034 15 0.611111 15C0.773188 15 0.928626 14.9342 1.04323 14.8169C1.15784 14.6997 1.22222 14.5408 1.22222 14.375C1.22222 13.2147 1.67292 12.1019 2.47515 11.2814C3.27739 10.4609 4.36546 10 5.5 10C6.63454 10 7.72261 10.4609 8.52485 11.2814C9.32708 12.1019 9.77778 13.2147 9.77778 14.375C9.77778 14.5408 9.84216 14.6997 9.95677 14.8169C10.0714 14.9342 10.2268 15 10.3889 15C10.551 15 10.7064 14.9342 10.821 14.8169C10.9356 14.6997 11 14.5408 11 14.375C10.9984 12.8837 10.4184 11.4539 9.3873 10.3993C8.3562 9.34482 6.95819 8.75165 5.5 8.75Z" fill="#646464"/>
+                </svg>
+              </i>${post.view_count} Views</a>
+            `;
+          }
+
+          // Update categories
+          if (post.categories && post.categories.length > 0) {
+            const categoriesHTML = post.categories.map(cat => `
+              <span class="badge badge-primary me-2 mb-2">${window.escapeHtml(cat.name)}</span>
+            `).join('');
+            document.getElementById('post-categories').innerHTML = categoriesHTML;
+          }
+
+          // Update tags
+          if (post.tags && post.tags.length > 0) {
+            const tagsHTML = post.tags.map(tag => `
+              <li><a href="our-blog.html?tag=${encodeURIComponent(tag.slug)}">#${window.escapeHtml(tag.name)}</a></li>
+            `).join('');
+            document.getElementById('post-tags-list').innerHTML = tagsHTML;
+            document.getElementById('post-tags-wrap').hidden = false;
+          }
+
+          // Load sidebar widgets
+          loadSidebarWidgets();
+
+        } catch (error) {
+          console.error('Error loading blog post:', error);
+          document.getElementById('post-full-content').innerHTML = 
+            '<p class="alert alert-danger">Failed to load post. Please try again later.</p>';
+        }
+      }
+
+      async function loadSidebarWidgets() {
+        try {
+          // Load categories
+          const categories = await window.blogAPI.fetchCategories();
+          if (categories && categories.length > 0) {
+            const categoriesHTML = categories.map(cat => `
+              <li><a href="our-blog.html?category=${encodeURIComponent(cat.slug)}">${window.escapeHtml(cat.name)}<i class="fa-solid fa-arrow-right"></i><span class="ms-1">(${cat.post_count})</span></a></li>
+            `).join('');
+            document.getElementById('sidebar-categories').innerHTML = categoriesHTML;
+          }
+
+          // Load recent posts
+          await window.blogAPI.loadPosts(1, { per_page: 5 });
+          if (window.blogAPI.posts && window.blogAPI.posts.length > 0) {
+            const recentHTML = window.blogAPI.posts.map(p => {
+              const postDate = new Date(p.published_at);
+              const dateStr = postDate.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+              return `
+                <li>
+                  <a href="blog-details.html?slug=${encodeURIComponent(p.slug)}">
+                    ${window.escapeHtml(p.title)}<i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                  <small class="d-block text-muted mt-1">${dateStr}</small>
+                </li>
+              `;
+            }).join('');
+            document.getElementById('sidebar-recent-posts').innerHTML = recentHTML;
+          }
+
+          // Load all tags
+          const tags = await window.blogAPI.fetchTags();
+          if (tags && tags.length > 0) {
+            const tagsHTML = tags.slice(0, 12).map(tag => `
+              <li><a href="our-blog.html?tag=${encodeURIComponent(tag.slug)}">#${window.escapeHtml(tag.name)}</a></li>
+            `).join('');
+            document.getElementById('sidebar-all-tags').innerHTML = tagsHTML;
+          }
+
+        } catch (error) {
+          console.error('Error loading sidebar widgets:', error);
+        }
+      }
+    });
+  </script>
 <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="69f094da3dda13b6ccbfff80"></script>
 </body>

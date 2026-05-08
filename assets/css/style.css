@@ -6013,6 +6013,7 @@ ul.mu-list-style {
     bottom: 24%;
     transform: scale(1.2) rotate(-10deg);
     right: 5%;
+    pointer-events: none;
 } 
 .quote-slide,
 .swiper.services-slider {

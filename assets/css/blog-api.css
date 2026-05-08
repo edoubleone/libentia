@@ -304,6 +304,22 @@
   object-fit: cover;
 }
 
+/* Blog details hero banner overrides */
+.banner .title-area-data h2 {
+  font-size: clamp(22px, 3.5vw, 42px);
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.banner .breadcrumb-item.active {
+  max-width: 380px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .blog-grid {

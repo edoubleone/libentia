@@ -635,8 +635,9 @@
           // Update banner
           document.getElementById('banner-title').textContent = post.title;
           document.getElementById('breadcrumb-post').textContent = post.title;
-          if (post.cover_image) {
-            document.getElementById('banner-cover').src = post.cover_image;
+          const bannerCover = document.getElementById('banner-cover');
+          if (bannerCover && post.cover_image) {
+            bannerCover.src = post.cover_image;
           }
 
           // Update post content

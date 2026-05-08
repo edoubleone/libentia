@@ -2456,6 +2456,14 @@ section.mu-hero-two-section ul.shaps {
      margin-top: 60px;
     padding-top: 60px;
 		}
+		.mu-footer-logo {
+			position: relative;
+			z-index: 112;
+		}
+		.mu-footer-logo ul.social-icon {
+			position: relative;
+			z-index: 112;
+		}
 		.mu-footer {
     		padding-top: 60px;
         }

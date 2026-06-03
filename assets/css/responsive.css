@@ -1273,7 +1273,7 @@
     right: 0%;
 		}
     .working-ratting {
-     		right: -21%;
+     		right: -8%;
      }
      .doctor-img img.doctor-bg {
      		width: 100%;
@@ -2198,6 +2198,11 @@ height: auto !important;
 	.time-fully {
 	    right: -7%;
      }
+	.working-ratting {
+	    right: 15%;
+	    top: 45%;
+	    padding: 12px 16px;
+	}
      .mu-accordion .accordion-item a.heading {
 	    padding-right: 25px;
 	}

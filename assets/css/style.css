@@ -5658,6 +5658,10 @@ ul.mu-list-style {
 .doctor-img img {
     z-index: 11;
     position: relative;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 .doctor-img .service-24-7 {
     z-index: 111;
@@ -5680,12 +5684,14 @@ ul.mu-list-style {
     z-index: 11;
     position: absolute;
     top: 40%;
-    right: -37%;
+    right: -30%;
     display: flex;
     padding: 20px;
     border-radius: 25px;
     align-items: center;
     border: 1px solid #CFCFCF;
+    white-space: nowrap;
+    min-width: fit-content;
 } 
 .working-ratting ul {
     display: flex;

@@ -272,59 +272,5 @@
   <script src="assets/js/jquery.countdown.min.js"></script>
   <script src="assets/js/circle-progres.js"></script> 
   <script src="assets/js/custom.js"></script>
-  <script>
-    (function () {
-      var form = document.getElementById('ghl-contact-form');
-      var alert = document.getElementById('form-alert');
-      var btn = document.getElementById('contact-submit');
-
-      function showAlert(msg, success) {
-        alert.textContent = msg;
-        alert.style.display = 'block';
-        alert.style.background = success ? '#d4edda' : '#f8d7da';
-        alert.style.color = success ? '#155724' : '#721c24';
-        alert.style.border = '1px solid ' + (success ? '#c3e6cb' : '#f5c6cb');
-      }
-
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        var name = document.getElementById('contact-name').value.trim();
-        var email = document.getElementById('contact-email').value.trim();
-
-        if (!name || !email) {
-          showAlert('Please enter your name and email.', false);
-          return;
-        }
-
-        btn.disabled = true;
-        btn.querySelector('span').textContent = 'Sending...';
-
-        var data = new FormData();
-        data.append('name', name);
-        data.append('email', email);
-        data.append('phone', document.getElementById('contact-phone').value.trim());
-        data.append('subject', document.getElementById('contact-subject').value.trim());
-        data.append('message', document.getElementById('contact-message').value.trim());
-
-        fetch('submit-contact.php', { method: 'POST', body: data })
-          .then(function (r) { return r.json(); })
-          .then(function (res) {
-            if (res.success) {
-              showAlert(res.message, true);
-              form.reset();
-            } else {
-              showAlert(res.message || 'Something went wrong. Please try again.', false);
-            }
-          })
-          .catch(function () {
-            showAlert('Network error. Please check your connection and try again.', false);
-          })
-          .finally(function () {
-            btn.disabled = false;
-            btn.querySelector('span').innerHTML = 'Submit Now<i class="fa-solid fa-arrow-right"></i>';
-          });
-      });
-    })();
-  </script>
 <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a31f1ee0e84ef9ef9633f49" data-source="WEB_USER"></script>
 </body>

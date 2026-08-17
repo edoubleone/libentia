@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -A \"Mozilla/5.0\" https://www.libentiahealth.com/contact.html)",
+      "Bash(curl -sI https://www.libentiahealth.com/contact.html)",
+      "Bash(nslookup www.libentiahealth.com)",
+      "Bash(nslookup libentiahealth.com)",
+      "Bash(curl -sI https://libentiahealth.com/contact.html)",
+      "Bash(nslookup -type=CNAME www.libentiahealth.com)",
+      "Bash(curl -s \"https://ipinfo.io/199.188.204.141/json\")"
+    ]
+  }
+}
